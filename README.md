@@ -1,3 +1,6 @@
+NAME: PRIYANKA CHAUDHARI
+PRN: 1292240259
+
 DevOps Assignment
 1. Five DevOps Concepts
 1. Continuous Integration (CI)
