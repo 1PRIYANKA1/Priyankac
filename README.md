@@ -1,81 +1,76 @@
 DevOps Assignment
+1. Five DevOps Concepts
+1. Continuous Integration (CI)
 
-1. Five DevOps Concepts 
+Developers frequently merge their code changes into a shared repository.
+CI tools such as GitHub Actions, Jenkins, and GitLab CI automatically test and validate the changes to prevent conflicts and errors during integration.
 
-1. Continuous Integration (CI) 🔄  
-   Frequently testing and merging code to avoid conflicts.  
-   CI tools like GitHub Actions, Jenkins, and GitLab CI automate testing and integration.
+2. Continuous Deployment (CD)
 
-2. Continuous Deployment (CD) 🚀  
-   Automatically deploying successfully tested code into production without manual steps.  
-   Helps deliver updates faster and more reliably.
+After successful integration and testing, CD automatically deploys the updated code to production or staging environments.
+This ensures faster, reliable, and repeatable releases.
 
-3. Version Control (Git) 📘  
-   Git tracks code changes, enables collaboration, and maintains project history.  
-   Developers can work on separate features without disturbing each other.
+3. Version Control (Git)
 
-4. Containerization (Docker) 📦  
-   Docker packages applications with all dependencies into portable containers.  
-   Ensures the same behavior across Mac, Windows, Linux, servers, and cloud systems.
+Git helps track modifications in the codebase, enabling collaboration and maintaining a complete history of changes.
+Different developers can work independently without interfering with each other’s work.
 
-5. Automation ⚙️  
-   Eliminates repetitive manual work.  
-   Used for automated building, testing, monitoring, and deployment tasks.
+4. Containerization (Docker)
 
- 2. How I Completed This Assignment (Extended Explanation)
+Docker packages an application along with its dependencies into isolated containers.
+This guarantees that the application behaves the same way across different operating systems and environments.
 
-🐳 Docker Commands Used
-```bash
+5. Automation
+
+Automation removes manual repetitive tasks involved in building, testing, and deploying applications.
+It is essential for CI/CD pipelines, monitoring, provisioning, and overall DevOps efficiency.
+
+2. How I Completed This Assignment (Detailed Explanation)
+Docker Commands Used
 docker build -t devops-assignment .
-docker tag devops-assignment maulipatil2/devops-assignment:v1
-docker push maulipatil2/devops-assignment:v1
-```
+docker tag devops-assignment 1priyanka1/devops-assignment:v1
+docker push 1priyanka1/devops-assignment:v1
 
- 📌 What These Docker Commands Do
-- docker build → Creates a Docker image using the Dockerfile.  
-- docker tag → Assigns a version tag (v1) for pushing to Docker Hub.  
-- docker push → Uploads the image to my Docker Hub repository.  
+Explanation of Docker Commands
 
-This gave me hands-on experience in building and sharing container images.
+docker build: Builds a Docker image using the Dockerfile from the current directory.
 
-📝 Git Commands Used
-```bash
+docker tag: Assigns a name and version tag to the built image.
+
+docker push: Uploads the tagged Docker image to my Docker Hub account.
+
+These steps taught me how containers are built and published.
+
+Git Commands Used
 git init
 git add .
 git commit -m "Initial commit"
 git branch -M main
-git remote add origin https://github.com/MauliPatil2/devops-demo-app
+git remote add origin https://github.com/1PRIYANKA1/Priyankac.git
 git push -u origin main
-```
 
-📌 What These Git Commands Do
-- git init → Creates a new Git repository.  
-- git add → Stages all files for commit.  
-- git commit → Saves project changes in Git history.  
-- git remote add origin → Connects the project to GitHub.  
-- git push → Uploads code to GitHub.
+Explanation of Git Commands
 
-This taught me proper version control workflow used in software development.
+git init: Initializes a new Git repository.
 
+git add: Stages all project files for committing.
 
-3. What I Learned (Extended Deep Explanation)
+git commit: Records the changes with a message.
 
-- 🐳 Learned how to build, tag, and upload Docker images.  
-- 💻 Understood basic Linux commands and how they work inside a container.  
-- 🔗 Learned how Git and GitHub manage source code effectively.  
-- 📦 Understood Docker image versioning (v1, v2, etc.).  
-- ☁️ Learned how Docker Hub acts as a cloud registry for storing images.  
-- 🔁 Understood the DevOps pipeline: Build → Tag → Push → Pull → Run.  
-- 📚 Experienced how automation makes deployments faster and error-free.  
-- 🤝 Understood how teams collaborate using Git branches and commits.  
-- 🌐 Saw how DevOps brings together development, version control, and containerization.  
+git branch -M main: Renames the branch to main.
 
-This assignment helped me understand real DevOps practices and how modern applications are built, packaged, and deployed.
+git remote add origin: Connects the local repository to GitHub.
 
-🔗 Repository & Docker Image
+git push: Uploads the project to GitHub.
 
-📁 GitHub Repository (Public)  
-https://github.com/MauliPatil2/devops-demo-app
+These commands helped me understand how source code versioning and remote repositories work.
 
-🐳 Docker Hub Image (Public)  
-https://hub.docker.com/r/maulipatil2/devops-assignment
+3. What I Learned
+
+How to create a Dockerfile and run Linux commands inside a container.
+How container images are built, tagged, versioned, and pushed to Docker Hub.
+How Git manages code history and collaboration.
+How to publish a project to GitHub correctly.
+How the DevOps workflow connects Git, Docker, and automation processes.
+The importance of reproducible builds and consistent deployment environments.
+This assignment gave me practical experience with DevOps fundamentals, Linux basics, Git operations, and Docker usage.
